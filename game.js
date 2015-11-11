@@ -2,21 +2,30 @@
 var answers = [];
 
 //create array with my 3 questions
-var questions = ["Will I be having tacos for dinner tonight?", 
-					"Is my favorite movie Bridesmaids?",
-					"Was I a ghost for Halloween?",				
-					"Is my favorite color Pink?",
-					"Is my favorite sport softball?"];
+	var questions = ["Will I be having tacos for dinner tonight?", 
+						"Is my favorite movie Bridesmaids?",
+						"Was I a ghost for Halloween?",
+						"Is my favorite color Pink?",
+						"Is my favorite sport softball?",
+						"Pick a number - 23, 65, 93"];
 
-//create array with the answers to my questions
-var answerKey = ["Yes", "Yes", "No", "Yes", "No"];
+	//create array with the answers to my questions
+	var answerKey = ["Yes", "Yes", "No", "Yes", "No", 23];
 
 //Go through question array and answer and give user feedback about their answers
 for(var i = 0; i < questions.length; i++){
 	var questionNumber = i + 1;
 	//Get the user's answer
 	answers[i] = prompt(questions[i]);
-	if(answers[i].toLowerCase() === "y" || answers[i].toLowerCase() === "yes"){
+	if(i === questions.length - 1){ //the last question is not a yes or no question
+			//convert the user's last answer to a number type
+			answers[i] = parseInt(answers[i]);
+			//console.log(answers[i]);
+			//verify the user entered one of the correct numbers
+			if(answers[i] !== 23 && answers[i] !== 65 && answers[i] !== 93){ 
+				console.log("I'm sorry, you didn't choose one of the available numbers. Please refresh the page to start over.");
+				break;
+	}else if(answers[i].toLowerCase() === "y" || answers[i].toLowerCase() === "yes"){
 		answers[i] = "Yes";
 	}else if(answers[i].toLowerCase() === "n" || answers[i].toLowerCase() === "no"){
 		answers[i] = "No";
