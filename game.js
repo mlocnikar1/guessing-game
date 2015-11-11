@@ -4,10 +4,12 @@ var answers = [];
 //create array with my 3 questions
 var questions = ["Will I be having tacos for dinner tonight?", 
 					"Is my favorite movie Bridesmaids?",
-					"Was I a ghost for Halloween?"];
+					"Was I a ghost for Halloween?",				
+					"Is my favorite color Pink?",
+					"Is my favorite sport softball?"];
 
 //create array with the answers to my questions
-var answerKey = ["Yes", "Yes", "No"];
+var answerKey = ["Yes", "Yes", "No", "Yes", "No"];
 
 //Go through question array and answer and give user feedback about their answers
 for(var i = 0; i < questions.length; i++){
