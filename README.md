@@ -4,6 +4,9 @@ Project Name:	Code: Start using GitHub!
 Description:	A guessing game!
 Sources:		https://canvas.instructure.com/courses/975040/assignments/4040565
 
+Driver: me
+Navigator: me
+
 Joke: 
 What did grandpa say before he kicked the bucket?
 	- How far do you think I can kick this bucket?
