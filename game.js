@@ -53,10 +53,10 @@ window.onload = function(){ //wait until the page finishes loading to start the 
 		}
 		//Add the user's feedback, based on their answer, to the page under the results section
 		if(answers[i] === answerKey[i]){
-			resultEl.innerHTML += "<h3>Your answer to question " + questionNumber + " is correct! The answer to '" 
+			resultEl.innerHTML += "<h3><img src='check.png' alt='check mark'/> Your answer to question " + questionNumber + " is correct! The answer to '" 
 				+ questions[i] + "' was '" + answers[i] + "'!</h3>";
 		}else{
-			resultEl.innerHTML += "<h3>Sorry, your answer to question " + questionNumber + " was wrong :(. The correct answer to '" + questions[i] + "' was '" + answerKey[i] + "'.</h3>";
+			resultEl.innerHTML += "<h3><img src='x.gif' alt='x mark'/> Sorry, your answer to question " + questionNumber + " was wrong :(. The correct answer to '" + questions[i] + "' was '" + answerKey[i] + "'.</h3>";
 		}
 	}
 };
