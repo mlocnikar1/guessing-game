@@ -1,0 +1,44 @@
+body {
+	background: #faebd7;
+	color: #4d2e05;
+}
+
+.correctAnswer {
+	color: #2f7a09;
+}
+
+.wrongAnswer {
+	color: #a90d0d;
+}
+
+.checkMark{
+	height: 15px;
+	width: 15px;
+}
+
+.xMark{
+	height: 15px;
+	width: 15px;
+}
+
+#questions, #results {
+	width: 700px;
+	margin: auto;
+	border: 2px dashed #4d2e05;
+	margin-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#intro{
+	width: 550px;
+	text-align: center;
+	margin: auto;
+}
+
+h1{
+	width: 500px;
+	text-align: center;
+	margin: auto;
+}
+

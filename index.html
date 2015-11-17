@@ -3,20 +3,23 @@
 	<head>
 		<title>Game Time!</title>
 		<script type="text/javascript" src="game.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<h1>Welcome My Guessing Game!</h1>
-		<p>I will be asking you three questions</p>
-		<p>Can you read my mind?</p>
-		<p>
-			Answer each question with yes or no to find out! <br/>
-		</p>
-		<h2>Questions:</h2>
-		<div id = "questionEl">
+		<div id = "intro">
+			<p>
+				I will be asking you three questions. Can you read my mind?
+				Answer each question with yes or no to find out!
+			</p>
 		</div>
-		<h2>Results:</h2>
-		<div id = "resultEl">
-			
+		<div id='questions'>
+			<h2>Questions:</h2>
+			<div id = "questionEl"></div>
+		</div>
+		<div id='results'>
+			<h2>Results:</h2>
+			<div id = "resultEl"></div>
 		</div>
 	</body>
 </html>
